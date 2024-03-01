@@ -14,17 +14,17 @@ public class Task4 {
 
     public int[] findIntersection(int[] nums1, int[] nums2){
         Set<Integer> set = new HashSet<>();
-        for (int item : nums1) {
+        for (int item : nums1) { // გადავუყვებით პირველი მასივის თითოეულ ელემენტს და ვინახავთ ჰაშსეტში, რათა არ გვქონდეს დუბლიკატები და შემდეგ შევამოწმოთ შემოსულია თუ არა ესე თუ ის რიცხვი. არსებითი მნიშვნელობა არ აქვს პირველ მასივზე ვიზამდით ამას თუ მეორეზე.
             set.add(item);
         }
         Set<Integer> answer = new HashSet<>();
-        for (int item : nums2) {
-            if (set.contains(item)) {
+        for (int item : nums2) { // გადავუყვებით მეორე მასივსაც
+            if (set.contains(item)) { // თუ მეორე მასივის რომელიმე ელემენტი პირველშიც იყო, პასუხის ჰაშსეტში ჩავწერთ(დუბლიკატების გამო)
                 answer.add(item);
             }
         }
 
-        int[] resultArray = new int[answer.size()];
+        int[] resultArray = new int[answer.size()]; // საბოლოოდ ჰაშსეტიდან გადავიყვანთ მასივში და დავაბრუნებთ
         int i = 0;
         for (int item : answer) {
             resultArray[i++] = item;

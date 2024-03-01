@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        // შექმნილია თითოეული კლასის ობიექტები და runner მეთოდით გავუშვებთ. runner-ში არის პირობებში მოცემული მაგალითები
 
 //        Task1 task1 = new Task1();
 //        task1.runner();
