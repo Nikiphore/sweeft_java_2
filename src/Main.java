@@ -1,5 +1,5 @@
 import java.util.*;
-// nika
+//
 public class Main {
     public static void main(String[] args) {
         // შექმნილია თითოეული კლასის ობიექტები და runner მეთოდით გავუშვებთ. runner-ში არის პირობებში მოცემული მაგალითები
